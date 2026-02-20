@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: hidden;
+  padding: 16px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+.custom-input {
+  border-radius: 6px;
+  padding: 4px;
+  margin-right: 8px;
+  color: #242424;
+  width: 110px;
+  text-align: center;
+  font-size: 1rem;
+}
